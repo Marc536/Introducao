@@ -1,0 +1,8 @@
+$def with (form)
+
+<form name="main" method="post"> 
+$:form.render()
+<input type="submit" /> 
+$if form['Input'].value: 
+    <div>Hello World $form['Input'].value</div>
+</form>
